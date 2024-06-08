@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #20163b;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+
+header {
+  padding-top: 3.5rem;
+}
+
+.logo-container {
+  width: 15rem;
+  height: 3rem;
+}
+
+.logo {
+  width: 100%;
+}
+
+main > * {
+  width: 50%;
+  margin-top: 2rem;
+}
+
+fieldset {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #ffffff37;
+  border: 3px solid #fff;
+}
+
+form,
+.description {
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+form > * {
+  margin-top: 1.5rem;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  background-color: #20163b;
+  border: 1px solid #fff;
+  font-size: 2.3rem;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+#check-btn {
+  width: 100%;
+  background-color: #d3d312;
+  border: none;
+  padding-block: 1rem;
+  color: #000000;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.result .result-text {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Description */
+
+.wrong {
+  background-color: #ffaec2;
+  border: 5px solid #a01414;
+  color: #a01414;
+}
+
+@media (max-width: 720px) {
+  main > * {
+    width: 95%;
+    margin-top: 2rem;
+  }
+
+  form,
+  .description {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
