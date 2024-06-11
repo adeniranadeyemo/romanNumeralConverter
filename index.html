@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roman Numeral Converter</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <!-- <script src="script.js" defer></script> -->
   </head>
   <body>
     <header class="container">
@@ -18,19 +18,19 @@
     <main class="container">
       <fieldset>
         <form action="#">
-          <label for="number-input">Enter a number:</label>
+          <label for="number">Enter a number:</label>
 
           <div class="input-container">
-            <input type="number" id="number-input" max="3999" min="1" />
+            <input type="number" id="number" />
           </div>
-          <button type="submit" id="check-btn">Convert</button>
+          <button type="submit" id="convert-btn">Convert</button>
         </form>
       </fieldset>
 
       <!--  -->
-      <fieldset class="result">
-        <h2 class="result-text">M</h2>
-      </fieldset>
+      <div id="output"></div>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>

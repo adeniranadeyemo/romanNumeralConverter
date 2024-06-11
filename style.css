@@ -43,8 +43,9 @@ main > * {
   margin-top: 2rem;
 }
 
-fieldset {
-  padding: 2rem 0;
+fieldset,
+#output {
+  padding: 1.5rem;
   text-align: center;
   background-color: #ffffff37;
   border: 3px solid #fff;
@@ -58,7 +59,7 @@ form,
 }
 
 form > * {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 label {
@@ -79,7 +80,7 @@ input:focus {
   outline: none;
 }
 
-#check-btn {
+#convert-btn {
   width: 100%;
   background-color: #d3d312;
   border: none;
@@ -89,17 +90,12 @@ input:focus {
   cursor: pointer;
 }
 
-.result .result-text {
-  font-weight: bold;
-  color: #fff;
+#output {
+  display: none;
 }
 
-/* Description */
-
-.wrong {
-  background-color: #ffaec2;
-  border: 5px solid #a01414;
-  color: #a01414;
+#output .result-text {
+  font-weight: bold;
 }
 
 @media (max-width: 720px) {
